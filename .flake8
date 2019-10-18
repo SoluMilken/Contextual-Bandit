@@ -1,0 +1,20 @@
+[flake8]
+max-line-length = 100
+ignore =
+    E125,E121,E266,
+    # print is allowed
+    T001, T003,
+    C901, C816
+exclude =
+    .git
+    # __pycache__
+    __pycache__
+    # virtual environments
+    .venv/
+    venv/
+    env/
+    # init files
+    **/__init__.py
+    docs/source/conf.py
+max_complexity = 10
+statistics = true
